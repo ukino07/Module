@@ -91,9 +91,4 @@ public class CategoryTest {
         flat = CategoryManager.getCategoryFlat(0L);
         assertEquals(4, flat.size());
     }
-
-//    @After
-//    public void check() throws JsonProcessingException {
-//
-//    }
 }

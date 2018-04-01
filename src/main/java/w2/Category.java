@@ -20,10 +20,9 @@ public class Category {
 
     private long catNo;
     private long parentNo;
-    // 다른 속성들 추가 (자동으로 depth 도 되도록)
+    // 다른 속성들 추가 (depth)
     private List<Category> children;
 
-    // 생성자
     public Category(long parentNo) throws Exception {
         if (parentNo > CATEGORY_COUNT) {
             throw new Exception("해당 부모카테고리가 없습니다.");
@@ -35,7 +34,6 @@ public class Category {
 
     private Category() {}
 
-    // 게터 세터
     public long getParentNo() {
         return parentNo;
     }
@@ -54,16 +52,11 @@ public class Category {
 
     public void setChildren() {
         List<Long> childNos = CategoryManager.getChainMap().get(this.catNo);
-        List<Category> children = new ArrayList<Category>(); // 빈 자식 카테고리
+        List<Category> children = new ArrayList<Category>();
         Category category;
 
         for (long childNo : childNos) {
-            //자식 모델 가져옴
             category = CategoryManager.getCatMap().get(childNo);
-            //자식의 자식번호 가져옴
-//            System.out.println("자식번호를 찍어보자");
-//            System.out.println(childNo);
-//            System.out.println(CategoryManager.getChainMap().get(childNo));
             children.add(category);
 
             if (! CollectionUtils.isEmpty(CategoryManager.getChainMap().get(childNo))) {
