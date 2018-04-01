@@ -1,4 +1,4 @@
-package hw1;
+package w1;
 
 import org.junit.Test;
 

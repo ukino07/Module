@@ -1,11 +1,13 @@
-package hw2;
+package w2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.util.List;
+
 /**
- * Created by u_kino07 on 2018. 3. 31..
+ * Created by u_kino07 on 2018. 4. 1..
  */
-public class TreeMainClass {
+public class FlatMainClass {
     public static void main(String[] args) throws Exception {
         // 카테고리 준비
         new Category(0L); // 1
@@ -66,14 +68,15 @@ public class TreeMainClass {
 
         new Category(36L); // 39
 
-        Category result = CategoryManager.getCategoryTree(0L);
+        List<Category> flatList = CategoryManager.getCategoryFlat(15L);
 
         ObjectMapper mapper = new ObjectMapper();
         System.out.println("결과");
-        System.out.println(mapper.writeValueAsString(result));
-        System.out.println("카테고리 정보");
-        System.out.println(mapper.writeValueAsString(CategoryManager.getCatMap()));
-        System.out.println("연결 정보");
-        System.out.println(mapper.writeValueAsString(CategoryManager.getChainMap()));
+        System.out.println(mapper.writeValueAsString(flatList));
+
+//        System.out.println("카테고리 정보");
+//        System.out.println(mapper.writeValueAsString(CategoryManager.getCatMap()));
+//        System.out.println("연결 정보");
+//        System.out.println(mapper.writeValueAsString(CategoryManager.getChainMap()));
     }
 }

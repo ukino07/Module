@@ -1,4 +1,4 @@
-package hw1;
+package w1;
 
 public class Dollar {
     private int amount = 0;

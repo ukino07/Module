@@ -1,4 +1,4 @@
-package hw2;
+package w2;
 
 import org.springframework.util.CollectionUtils;
 

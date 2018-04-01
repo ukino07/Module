@@ -1,21 +1,12 @@
-package hw2;
+package w2;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.Before;
-import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-
-public class CategoryTest {
-    Category tree;
-    List<Category> flat = new ArrayList<Category>();
-
-    @Before
-    public void prepareCategoryList() throws Exception {
+/**
+ * Created by u_kino07 on 2018. 3. 31..
+ */
+public class TreeMainClass {
+    public static void main(String[] args) throws Exception {
         // 카테고리 준비
         new Category(0L); // 1
         new Category(0L); // 2
@@ -74,26 +65,15 @@ public class CategoryTest {
         new Category(25L); // 38
 
         new Category(36L); // 39
-    }
 
-    @Test
-    public void testTreeCategory() throws JsonProcessingException {
-        tree = CategoryManager.getCategoryTree(0L);
-        assertEquals(36L, CategoryManager.getCatMap().get(39L).getParentNo());
-        assertEquals(15L, CategoryManager.getCatMap().get(25L).getParentNo());
+        Category result = CategoryManager.getCategoryTree(0L);
 
         ObjectMapper mapper = new ObjectMapper();
-        System.out.println(mapper.writeValueAsString(tree));
+        System.out.println("결과");
+        System.out.println(mapper.writeValueAsString(result));
+        System.out.println("카테고리 정보");
+        System.out.println(mapper.writeValueAsString(CategoryManager.getCatMap()));
+        System.out.println("연결 정보");
+        System.out.println(mapper.writeValueAsString(CategoryManager.getChainMap()));
     }
-
-    @Test
-    public void testFlatCategory() throws JsonProcessingException {
-        flat = CategoryManager.getCategoryFlat(0L);
-        assertEquals(4, flat.size());
-    }
-
-//    @After
-//    public void check() throws JsonProcessingException {
-//
-//    }
 }

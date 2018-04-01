@@ -1,4 +1,4 @@
-package hw2;
+package w2;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.util.LinkedMultiValueMap;
