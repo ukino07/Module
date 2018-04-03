@@ -117,3 +117,11 @@ public class CategoryTest {
         }
     }
 }
+
+/*
+Failed with error: fatal: unable to access 'https://github.com/ukino07/Module.git/':
+SSL certificate problem:
+unable to get local issuer certificate
+
+
+*/
