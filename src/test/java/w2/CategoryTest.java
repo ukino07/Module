@@ -91,7 +91,7 @@ public class CategoryTest {
     @Test
     public void testTreeCategory() throws Exception {
         long time = System.nanoTime();
-        tree = CategoryManager.getCategoryTree(9L);
+        tree = CategoryManager.getCategoryTree(0L);
 
         System.out.println("asdf : " + (System.nanoTime() - time));
 
@@ -120,11 +120,3 @@ public class CategoryTest {
         }
     }
 }
-
-/*
-Failed with error: fatal: unable to access 'https://github.com/ukino07/Module.git/':
-SSL certificate problem:
-unable to get local issuer certificate
-
-
-*/
