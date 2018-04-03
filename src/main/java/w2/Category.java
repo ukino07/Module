@@ -1,5 +1,6 @@
 package w2;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
@@ -10,17 +11,11 @@ import java.util.List;
  */
 public class Category {
     private static long CATEGORY_COUNT = 0;
-    private static Category topCategory;
-
-    static {
-        topCategory = new Category();
-        topCategory.catNo = CATEGORY_COUNT++;
-        CategoryManager.addCatMappingInfo(topCategory);
-    }
 
     private long catNo;
     private long parentNo;
     // 다른 속성들 추가 (depth)
+
     private List<Category> children;
 
     public Category(long parentNo) throws Exception {
@@ -29,10 +24,12 @@ public class Category {
         }
         this.parentNo = parentNo;
         this.catNo = CATEGORY_COUNT++;
-        CategoryManager.addCatMappingInfo(this);
     }
 
-    private Category() {}
+    public Category() {
+        this.parentNo = 0L;
+        this.catNo = CATEGORY_COUNT++;
+    }
 
     public long getParentNo() {
         return parentNo;
@@ -50,19 +47,25 @@ public class Category {
         this.catNo = catNo;
     }
 
-    public void setChildren() {
+    public List<Category> getChildren() {
+        return children;
+    }
+
+    public void setChildren() throws JsonProcessingException {
         List<Long> childNos = CategoryManager.getChainMap().get(this.catNo);
+
+        if (CollectionUtils.isEmpty(childNos)) {
+            return;
+        }
+
         List<Category> children = new ArrayList<Category>();
-        Category category;
 
         for (long childNo : childNos) {
-            category = CategoryManager.getCatMap().get(childNo);
-            children.add(category);
-
-            if (! CollectionUtils.isEmpty(CategoryManager.getChainMap().get(childNo))) {
-                category.setChildren();
-            }
+            Category child = CategoryManager.getCatMap().get(childNo);
+            children.add(child);
+            child.setChildren();
         }
+
         this.children = children;
     }
 }

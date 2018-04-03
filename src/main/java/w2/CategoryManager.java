@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
  * Created by u_kino07 on 2018. 3. 31..
  */
 public class CategoryManager {
-
     private static Map<Long, Category> catMap = new HashMap<Long, Category>();
     private static LinkedMultiValueMap<Long, Long> chainMap = new LinkedMultiValueMap<Long, Long>();
 
@@ -24,12 +23,23 @@ public class CategoryManager {
         return chainMap;
     }
 
-    public static void addCatMappingInfo(Category category) {
-        catMap.put(category.getCatNo(), category);
+    public static void registerCategories(List<Category> categories) throws JsonProcessingException {
+        clean();
 
-        if (category.getCatNo() != 0) {
-            chainMap.add(category.getParentNo(), category.getCatNo());
-        }
+        categories.stream().forEach(category -> {
+            if (! catMap.containsKey(category.getCatNo())) {
+                catMap.put(category.getCatNo(), category);
+
+                if (category.getCatNo() != category.getParentNo()) {
+                    chainMap.add(category.getParentNo(), category.getCatNo());
+                }
+            }
+        });
+    }
+
+    public static void clean() {
+        catMap.clear();
+        chainMap.clear();
     }
 
     public static Category getCategoryTree(long topCatNo) throws JsonProcessingException {
@@ -44,4 +54,10 @@ public class CategoryManager {
                 .map(childNo -> catMap.get(childNo))
                 .collect(Collectors.toList());
     }
+
+
+
+
+
+    // TODO. update, delete
 }
