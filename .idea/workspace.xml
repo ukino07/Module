@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1491dfbe-2036-4c1a-b4c7-f9f2bd1e27b6" name="Default" comment="">
+    <list default="true" id="1491dfbe-2036-4c1a-b4c7-f9f2bd1e27b6" name="Default" comment="remove test mainclass">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/w2/CategoryManager.java" afterPath="$PROJECT_DIR$/src/main/java/w2/CategoryManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/w2/CategoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/w2/CategoryTest.java" />
     </list>
     <ignored path="Module.iws" />
@@ -37,12 +38,11 @@
       <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/w2/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="436">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1366#1376#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +51,8 @@
       <file leaf-file-name="CategoryManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/w2/CategoryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="316">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
       <file leaf-file-name="CategoryTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/w2/CategoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="211">
+              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#476#486#0" expanded="true" />
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/src/main/java/hw2/FlatMainClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/hw2/CategoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/w2/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/w2/CategoryManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/w2/CategoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/w2/CategoryManager.java" />
       </list>
     </option>
   </component>
@@ -138,14 +138,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
@@ -1077,7 +1070,7 @@
       <workItem from="1522496777386" duration="21633000" />
       <workItem from="1522734716879" duration="7742000" />
       <workItem from="1522743092407" duration="4716000" />
-      <workItem from="1522749082548" duration="842000" />
+      <workItem from="1522749082548" duration="3844000" />
     </task>
     <task id="LOCAL-00001" summary="page rename">
       <created>1522586441503</created>
@@ -1114,43 +1107,50 @@
       <option name="project" value="LOCAL" />
       <updated>1522749400069</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove test mainclass">
+      <created>1522753628737</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522753628737</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CategoryTest - 2018.04.03 at 17h 54m 22s.xml">
-      <configuration name="CategoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest - 2018.04.03 at 18h 22m 18s.xml">
-      <configuration name="CategoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest - 2018.04.03 at 18h 23m 06s.xml">
-      <configuration name="CategoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest_testFlatCategory - 2018.04.03 at 18h 39m 02s.xml">
-      <configuration name="CategoryTest.testFlatCategory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest_testFlatCategory - 2018.04.03 at 18h 39m 26s.xml">
-      <configuration name="CategoryTest.testFlatCategory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest_testFlatCategory - 2018.04.03 at 18h 43m 02s.xml">
-      <configuration name="CategoryTest.testFlatCategory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 18h 42m 39s.xml">
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 25m 36s.xml">
       <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 18h 42m 55s.xml">
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 35m 46s.xml">
       <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 18h 43m 17s.xml">
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 37m 13s.xml">
       <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 05m 39s.xml">
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 40m 12s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 40m 48s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 41m 08s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 41m 25s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 43m 47s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 44m 16s.xml">
+      <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryTest_testTreeCategory - 2018.04.03 at 20h 44m 46s.xml">
       <configuration name="CategoryTest.testTreeCategory" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53501000" />
+    <option name="totallyTimeSpent" value="56503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1164,15 +1164,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08400646" sideWeight="0.486166" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29321486" sideWeight="0.48863637" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08400646" sideWeight="0.513834" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39488637" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29321486" sideWeight="0.5113636" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08481421" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1222,8 +1222,7 @@
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1256,8 +1255,7 @@
           <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1290,8 +1288,7 @@
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1326,8 +1323,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1402,8 +1398,7 @@
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1467,22 +1462,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.0.RELEASE/spring-core-4.1.0.RELEASE.jar!/org/springframework/util/CollectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/w2/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="436">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1366#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/w2/CategoryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="316">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1491,8 +1496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/w2/CategoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        <state relative-caret-position="211">
+          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#476#486#0" expanded="true" />

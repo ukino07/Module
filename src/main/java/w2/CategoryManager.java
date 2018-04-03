@@ -35,6 +35,8 @@ public class CategoryManager {
                 }
             }
         });
+
+        catMap.get(0L).setChildren();
     }
 
     public static void clean() {
@@ -44,7 +46,6 @@ public class CategoryManager {
 
     public static Category getCategoryTree(long topCatNo) throws JsonProcessingException {
         Category topCategory = catMap.get(topCatNo);
-        topCategory.setChildren();
         return topCategory;
     }
 

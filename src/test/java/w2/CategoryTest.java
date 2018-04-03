@@ -90,7 +90,10 @@ public class CategoryTest {
 
     @Test
     public void testTreeCategory() throws Exception {
-        tree = CategoryManager.getCategoryTree(0L);
+        long time = System.nanoTime();
+        tree = CategoryManager.getCategoryTree(9L);
+
+        System.out.println("asdf : " + (System.nanoTime() - time));
 
         assertEquals(36L, CategoryManager.getCatMap().get(39L).getParentNo());
         assertEquals(15L, CategoryManager.getCatMap().get(25L).getParentNo());
