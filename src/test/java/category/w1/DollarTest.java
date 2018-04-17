@@ -1,5 +1,6 @@
-package w1;
+package category.w1;
 
+import category.w1.Dollar;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

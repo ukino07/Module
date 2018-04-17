@@ -1,5 +1,7 @@
-package w2;
+package category.w2;
 
+import category.w2.Category;
+import category.w2.CategoryManager;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.After;

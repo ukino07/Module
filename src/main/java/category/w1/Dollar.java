@@ -1,4 +1,4 @@
-package w1;
+package category.w1;
 
 public class Dollar {
     private int amount = 0;
