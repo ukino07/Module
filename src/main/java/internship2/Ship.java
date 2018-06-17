@@ -40,15 +40,46 @@ public class Ship {
         return this.howManyDelivered;
     }
 
-    // 상품 실음
-    public void loadItems() {
-        this.numberItemLoadable = INIT_NUMBER_ITEM_LOADABLE + 50 * Count.ITEM * this.round;
-        spendTime(getTimeLoadItems(this.numberItemLoadable), false);
+    public void run(TransportationCompany company) {
+        while(! this.finish) {
+            makeReady();
+            loadItems(company);
+            moveToFirstDestination();
+            deliver();
+            while(! this.finish && this.numberItemLoadable > 0) {
+                setTimeMoveToNextDestination();
+                deliver();
+            }
+            returnToHomePort();
+        }
+    }
+
+    // 정박 시설 차지
+    private void occupyDock(TransportationCompany company) {
+        company.setOccupyDockKey(this);
     }
 
     // 정비
     private void makeReady() {
+        if (this.round < 1) {
+            return;
+        }
         spendTime(10 * Time.HOUR, false);
+    }
+
+    // 상품 실음
+    private void loadItems(TransportationCompany company) {
+        if (company.getOccupyDockKey() == null) {
+            occupyDock(company);
+        }
+
+        while(! company.getOccupyDockKey().equals(this)) {
+            wait(getTimeLoadItems(company.getOccupyDockKey().numberItemLoadable));
+        }
+
+        this.numberItemLoadable = INIT_NUMBER_ITEM_LOADABLE + 50 * Count.ITEM * this.round;
+        spendTime(getTimeLoadItems(this.numberItemLoadable), false);
+        company.setOccupyDockKey(null);
     }
 
     // 대기
@@ -69,7 +100,7 @@ public class Ship {
 
     // 다음 배송지 이동
     private void setTimeMoveToNextDestination() {
-        spendTime(Time.HOUR, true);
+        spendTime(Time.HOUR * (this.round + 1), true);
     }
 
     // 마지막 배송지에서 모항으로 돌아옴
@@ -82,6 +113,14 @@ public class Ship {
         }
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Ship{" +
+                "timeDeliveryAvailable=" + timeDeliveryAvailable +
+                ", numberItemLoadable=" + numberItemLoadable +
+                ", round=" + round +
+                ", finish=" + finish +
+                ", howManyDelivered=" + howManyDelivered +
+                '}';
+    }
 }
